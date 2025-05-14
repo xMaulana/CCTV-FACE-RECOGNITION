@@ -1,0 +1,10 @@
+gdown==5.2.0
+keyboard==0.13.5
+matplotlib==3.10.3
+numpy==2.2.5
+opencv_python==4.11.0.86
+Pillow==11.2.1
+PyMySQL==1.1.1
+PyYAML==6.0.2
+PyYAML==6.0.2
+ultralytics==8.3.89
