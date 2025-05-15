@@ -1,13 +1,14 @@
 facebank_dir: "facebank"
 facebank_output: "models/weights/facebank/facebank.pkl"
 
+# mediamtx server fill with 'null' if you dont need previews
 rtsp_server_host: "rtsp://admin:PWD@192.168.0.102:8554/Streaming/Channels"
 
 # Please follow this format to add a new sources:
 # name_of_cctv : [
 #   cctv_url,
 #   null, #fill with null
-#   Show preview (True/False),
+#   Show preview (if True, rtsp_server_host can't be null) (True/False),
 #   Let the program to take a new data (True/False)
 # ]
 
