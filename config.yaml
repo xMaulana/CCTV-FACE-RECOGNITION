@@ -3,6 +3,16 @@ facebank_output: "models/weights/facebank/facebank.pkl"
 
 rtsp_server_host: "rtsp://admin:PWD@192.168.0.102:8554/Streaming/Channels"
 
+# Please follow this format to add a new sources:
+# name_of_cctv : [
+#   cctv_url,
+#   null, #fill with null
+#   Show preview (True/False),
+#   Let the program to take a new data (True/False)
+# ]
+
+# insert below
+
 sources: {
   # tes_main_in: [
   #   0,
@@ -13,18 +23,16 @@ sources: {
   tes_maincam_out: [
     0,
     null,
-    True,
     True
   ],
   cctv_maincam_out: [
     "rtsp://admin:PASSW@192.168.0.133/Streaming/Channels/101",
     null,
-    True,
     True
   ]
 }
 
-num_detectors: 4
+num_detectors: 4 #how many detector workers will be used 
 
 sql_config: {
   host: "localhost",

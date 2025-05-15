@@ -519,7 +519,8 @@ def prewhiten(x):
 
 def initialize_mtcnn(device="cpu", **kwargs) -> MTCNN:
     mpath = os.path.join(os.path.dirname(os.path.abspath(__file__)), "weights/mtcnn")
-    if all([x in os.listdir(mpath) for x in ["onet.pt", "pnet.pt", "rnet.pt"]]):
+    print(all([x in os.listdir(mpath) for x in ["onet.pt", "pnet.pt", "rnet.pt"]]))
+    if not all([x in os.listdir(mpath) for x in ["onet.pt", "pnet.pt", "rnet.pt"]]):
         os.makedirs(mpath, exist_ok=True)
         gdown.download_folder(id="18U2td1zwlj-F6zU38A71-Y_XoIUi4Jnc", output=mpath)
     model = MTCNN(device=device, **kwargs)
