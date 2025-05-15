@@ -76,6 +76,7 @@ for i in os.listdir(facebank_dir["processed"]):
 
     print(f"{i} got {success_cnt} image extracted")
 
+assert len(results["features"]) > 0, "No image found!"
 results["features"] = torch.stack(results["features"])
 print(results["features"].shape)
 

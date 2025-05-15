@@ -97,3 +97,10 @@ To run the application using the following command:
 ```bash
 python multiproc.py
 ```
+
+## Regist face data
+To add a new data, create new folder inside `facebank/unprocessed`, the folders that created must follow "ID_NAME" format. Then, insert images into that folder and run the following command:
+
+```bash
+python regist_face.py
+```

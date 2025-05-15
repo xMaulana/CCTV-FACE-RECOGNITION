@@ -150,7 +150,6 @@ def detect_recog(frame_queue:mp.Queue, proc_queue:dict, database_queue:mp.Queue,
                             if changed:
                                 id_cctvn = cctv_id.rsplit("_")
                                 database_queue.put((worker_id, worker_name, id_cctvn[1],cctv_id, id_cctvn[2], id_cctvn[0], check_dict[worker_id]["timestamp"]))
-
                     if CONFIG["sources"][cctv_id][2]:    
                         new_result.append(val_det)
                     sleep_ms(1)
