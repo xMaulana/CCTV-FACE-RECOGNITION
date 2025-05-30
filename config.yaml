@@ -8,8 +8,7 @@ rtsp_server_host: "rtsp://admin:PWD@192.168.0.102:8554/Streaming/Channels"
 # name_of_cctv : [
 #   cctv_url,
 #   null, #fill with null
-#   Show preview (if True, rtsp_server_host can't be null) (True/False),
-#   Let the program to take a new data (True/False)
+#   Show preview (if True, rtsp_server_host can't be null) (True/False)
 # ]
 
 # insert below
