@@ -1,6 +1,6 @@
 # CCTV Face Recognition
 
-This is service can recognize faces in real-time from multiple CCTV cameras with an integrated recognition system. This repository provides all the setup and installation instructions to get started with the service.
+This is service that can recognize faces in real-time from multiple CCTV cameras with an integrated recognition system. This repository provides all the setup and installation instructions to get started with the service.
 
 ## Setup MediaMTX and MySQL
 
@@ -23,6 +23,8 @@ docker run -d \
 -p 8189:8189/udp \
 bluenviron/mediamtx
 ```
+
+Important: To publish your stream on an RTSP server, you will need FFmpeg installed on your system.
 
 ### 2. MySQL
 
@@ -104,3 +106,26 @@ To add a new data, create new folder inside `facebank/unprocessed`, the folders 
 ```bash
 python regist_face.py
 ```
+
+
+## License
+
+Copyright (c) 2025 Muhammad Wisnu Maulana 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
